@@ -85,7 +85,7 @@ class FlickrSearchImpl : NSObject, FlickrSearch, OFFlickrAPIRequestDelegate {
         let flickrRequest = OFFlickrAPIRequest(APIContext: self.flickrContext);
         flickrRequest.delegate = self;
         self.requests.addObject(flickrRequest)
-        
+        //TODO: Kwan - modify this 
         let sucessSignal = self.rac_signalForSelector(Selector("flickrAPIRequest:didCompleteWithResponse:"),
           fromProtocol: OFFlickrAPIRequestDelegate.self)
         
